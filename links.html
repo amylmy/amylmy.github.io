@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Useful Links and Notes on WebGIS, 3D visualization, indoor GIS, and positioning.">
+<title>Links &amp; Notes</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="bookmark" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead"><div class="masthead-inner">
+  <a class="site-title" href="index.html">Mengyun LIU</a>
+  <nav id="site-navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+  </nav>
+</div></header>
+
+<div class="page-layout">
+<aside class="author-profile" aria-label="Profile">
+  <h2>Mengyun LIU <span class="chinese-name">(刘梦云)</span></h2>
+  <p class="author-role">Distinguished Associate Researcher</p>
+  <p>School of Artificial Intelligence<br>Guangzhou University</p>
+  <ul class="profile-links">
+    <li><a href="https://scholar.google.com/citations?hl=zh-CN&user=tKPIndkAAAAJ"><span>[Google Scholar]</span></a></li>
+    <li><a href="https://github.com/amylmy"><span>[GitHub]</span></a></li>
+  </ul>
+</aside>
+
+<main id="main">
+<h1>Useful Links &amp; Notes</h1>
+
+<section id="webgis">
+<h2><a href="https://www.sunbt.ltd/">WebGIS 加油站</a></h2>
+
+<h3 id="structure">系统架构设计</h3>
+<ul>
+  <li><strong>矢量、栅格大数据HA解决方案</strong></li>
+  <li><strong>三维模型前端加载优化及存储</strong></li>
+  <li><strong>GIS+BIM 数字孪生DEMO技术方案</strong>
+    <ul>
+      <li>矢量数据：天地图地图、行业数据 (土地类型等)</li>
+      <li>栅格数据：卫星遥感影像数据、倾斜摄影数据</li>
+      <li>BIM：不同精度类型、不同层次、不同部件的模型数据</li>
+      <li>DEM数据</li>
+      <li>监控数据：视频、图像、标识等</li>
+    </ul>
+  </li>
+  <li><strong>实现效果</strong>
+    <ul>
+      <li>跨尺度无缝三维可视化</li>
+      <li>室内外一体化可视化</li>
+      <li>动态数据可视化</li>
+      <li>地上地下一体化可视化</li>
+    </ul>
+  </li>
+  <li><strong>可视化技术路线</strong>: Cesium、Three.js、MapboxGL 等基于WebGL的可视化框架</li>
+</ul>
+</section>
+
+<section id="3dmodel">
+<h2>3D模型前端可视化</h2>
+<h3>Cesium学习</h3>
+<p><a href="https://www.sunbt.ltd/GIS/WebGIS/Cesium/">WebGIS加油站-Cesium</a></p>
+<p>Cesium是一个用于显示三维地球和地图的开源js库，为三维GIS提供了一个高效的数据可视化分析平台。</p>
+<ul>
+  <li>跨平台、跨浏览器、无插件</li>
+  <li>支持3D Tiles数据格式</li>
+  <li>支持三类地图模式：3D、2D、2.5D</li>
+</ul>
+</section>
+
+<section id="indoor">
+<h2>室内GIS</h2>
+<h3>Indoor Mapping</h3>
+<ul>
+  <li><a href="https://www.mappedin.com/blog/product/indoor-mapping">Indoor Mapping Blogs</a></li>
+</ul>
+</section>
+
+<section id="3dvision">
+<h2>三维视觉研究</h2>
+<h3 id="vision3ddata">公共数据集</h3>
+<ul>
+  <li>GitHub三维重建公开数据集整理(MVS篇) | <a href="https://github.com/ethan-li-coding/Datasets-of-MVS-reconstruction">link</a></li>
+  <li>HKUST-BlendedMVS | <a href="https://github.com/YoYo000/BlendedMVS">link</a> | <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Yao_BlendedMVS_A_Large-Scale_Dataset_for_Generalized_Multi-View_Stereo_Networks_CVPR_2020_paper.html">paper</a></li>
+  <li>Pix4d公开数据集 | <a href="https://cloud.pix4d.com/demo">link</a></li>
+</ul>
+
+<h3 id="vision3dpractice">实践</h3>
+<ul>
+  <li><a href="https://yanqs.blog.csdn.net/article/details/112846641">DenseDepth2019 - 网络结构及Demo</a></li>
+</ul>
+
+<h3>Paper - 单目深度估计</h3>
+<ul>
+  <li>2020'ICRA | Geometric Pretraining for Monocular Depth Estimation | <a href="https://ieeexplore.ieee.org/abstract/document/9196847">paper</a></li>
+  <li>2019'arXiv | High Quality Monocular Depth Estimation via Transfer Learning | <a href="https://arxiv.org/pdf/1812.11941.pdf">paper</a></li>
+  <li>2018'CVPR | Deep Ordinal Regression Network for Monocular Depth Estimation | <a href="https://openaccess.thecvf.com/content_cvpr_2018/html/Fu_Deep_Ordinal_Regression_CVPR_2018_paper.html">paper</a></li>
+  <li>2018'CVPR | MegaDepth | <a href="https://openaccess.thecvf.com/content_cvpr_2018/html/Li_MegaDepth_Learning_Single-View_CVPR_2018_paper.html">paper</a></li>
+</ul>
+</section>
+
+<section id="basics">
+<h2 id="cord">基础知识</h2>
+<h3>坐标系转换</h3>
+<p><a href="https://www.sunbt.ltd/GIS/concept/GIS%E5%B0%8F%E7%9F%A5%E8%AF%86-%E7%94%B1%E5%AF%B9GCJ-02%E7%9A%84%E7%96%91%E9%97%AE%E5%BC%95%E5%87%BA%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB.html">Java版坐标转换方法</a>: WGS84、GCJ02、BD09坐标之间的转换方法</p>
+</section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div>&copy; Mengyun LIU · Guangzhou University</div>
+</footer>
+
+</body>
+</html>
